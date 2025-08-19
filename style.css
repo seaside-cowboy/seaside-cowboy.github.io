@@ -1,3 +1,4 @@
+/*general */
 body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fdfdfd; }
 header { background: #222; color: #fff; padding: 1rem; text-align: center; }
 nav a { margin: 0 0.5rem; color: #fff; text-decoration: none; }
@@ -6,6 +7,12 @@ main { padding: 2rem; max-width: 900px; margin: auto; }
 h1, h2 { color: #222; }
 img { max-width: 100%; height: auto; }
 video { max-width: 100%; margin: 1rem 0; }
+ul {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem; /* indent bullets */
+  list-style: disc;     
+}
+/*override */
 .socials {
   list-style: none;       /* remove bullet points */
   padding: 0;
@@ -16,7 +23,7 @@ video { max-width: 100%; margin: 1rem 0; }
 }
 
 .socials li {
-  display: inline;        /* <-- this makes each list item horizontal */
+  display: inline;        /* horizontal */
 }
 
 .socials li a {
