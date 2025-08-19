@@ -1,6 +1,13 @@
 /*general */
 body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fdfdfd; }
-header { background: #222; color: #fff; padding: 1rem; text-align: center; }
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 nav a { margin: 0 0.5rem; color: #fff; text-decoration: none; }
 nav a:hover { text-decoration: underline; }
 main { padding: 2rem; max-width: 900px; margin: auto; }
@@ -35,3 +42,24 @@ ul {
 .socials li a:hover {
   text-decoration: underline;
 }
+
+.section-nav, .page-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: .5rem 0;
+}
+
+.section-nav a, .page-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section-nav a:hover, .page-nav a:hover {
+  text-decoration: underline;
+}
+
+/* behaviours */
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 80px; }
