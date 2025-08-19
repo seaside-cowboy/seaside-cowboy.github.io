@@ -51,6 +51,7 @@ p, li {
   text-decoration: underline;
 }
 
+.site-title { color: #ffffff; text-align: center;}
 .page-nav {
   display: flex;
   gap: 1rem;
