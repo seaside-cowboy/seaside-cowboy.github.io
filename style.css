@@ -20,7 +20,7 @@ section {
         }  
 
 section + section {                                   
-  margin-top: 2.5rem;                                                 
+  margin-top: 2rem;                                                 
   padding-top: 2rem;
 }
 
