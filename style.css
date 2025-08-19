@@ -102,18 +102,19 @@ p, li {
 .section-rail .section-nav a:hover, .section-rail .section-nav a:focus { text-decoration: underline; background: #333333;}
 
 /* side menu */
-:root { --content-w: 900px; --header-h: 80px; }
+:root { --content-w: 1100px; --header-h: 80px; }
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr min(var(--content-w), 100%) 1fr; /* gutter | content | gutter */
+   grid-template-columns: 220px minmax(0, var(--content-w)) 1fr;
+  gap: 2rem;
 }
 
 .layout > main {
   grid-column: 2;
   padding: 2rem;
   margin: 0;          
-  max-width: none;      
+  max-width: 100%;      
 }
 
 .section-rail .section-nav {
@@ -135,7 +136,8 @@ p, li {
   border-right: 2px solid transparent;
 }
 
-.section-rail {  position: sticky;
+.section-rail {  
+  position: sticky;
   top: calc(var(--header-h) + 8px);
   align-self: start;
   color: #fff; 
