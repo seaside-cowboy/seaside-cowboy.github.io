@@ -190,22 +190,9 @@ html { scroll-behavior: smooth; }
 section { scroll-margin-top: 80px; }
 
 /* collage */
-.art-gallery{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* uniform tile width */
-  gap: 16px;
-  max-width: 1400px;
-  width: calc(100% - 32px);
-  margin: 0 auto;
-}
+.art-gallery { /* Browser auto-chooses number of columns from this target width */ 
+  column-width: 320px; column-gap: 16px; max-width: 1400px; /* collage centered*/ 
+  width: calc(100% - 32px); margin: 0 auto; /* center on the page */ }
 
-.art-gallery > img {
-  width: 100%;
-  aspect-ratio: 1 / 1;     
-  object-fit: cover;       
-  display: block;
-}
-
-.art-gallery > img.portrait { aspect-ratio: 3 / 5; }  
-.art-gallery > img.landscape{ aspect-ratio: 16 / 9; } 
-.art-gallery > img.square   { aspect-ratio: 1 / 1; }
+.art-gallery > img { width: 100%; height: auto; display: block; 
+                    margin: 0 0 16px; break-inside: avoid; /* keep each image intact */ }
