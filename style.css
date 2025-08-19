@@ -11,9 +11,9 @@ header {
 nav a { margin: 0 0.5rem; color: #ffffff; text-decoration: none; }
 nav a:hover { text-decoration: underline; background: #333333;}
 main { padding: 2rem; max-width: 900px; margin: auto; }
-h1, h2 { color: #9b9b9b; }
+h1, h2 { color: #ababab; }
 h3, h4, h5 {
-  color: #9b9b9b; /* sub-headings */
+  color: #ababab; /* sub-headings */
 }
 img { max-width: 100%; height: auto; }
 video { max-width: 100%; margin: 1rem 0; }
@@ -24,7 +24,7 @@ ul {
 }
 
 p, li {
-  color: #bdbdbd; /* paragraph & list text */
+  color: #ffffff; /* paragraph & list text */
 }
 
 /*override */
