@@ -1,5 +1,5 @@
 /*general */
-body { font-family: Times New Roman, serif; margin: 0; padding: 0; background: #181818; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #181818; }
 header {
   background: #000000;
   color: #ffffff;  
@@ -9,7 +9,7 @@ header {
   z-index: 10;
 }
 nav a { margin: 0 0.5rem; color: #ffffff; text-decoration: none; }
-nav a:hover { text-decoration: underline; }
+nav a:hover { text-decoration: underline; background: #333333;}
 main { padding: 2rem; max-width: 900px; margin: auto; }
 h1, h2 { color: #717171; }
 h3, h4, h5 {
