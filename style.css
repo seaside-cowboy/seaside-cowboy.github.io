@@ -52,6 +52,15 @@ h1 {
 h3, h4, h5 {
   color: #D2D2D2; /* sub-headings */
 }
+
+main h1 + h2,
+main h2 + h3,
+main h3 + h4,
+main h4 + h5,
+main h5 + h6 {
+  margin-top: 0.6rem;
+}
+
 img { max-width: 100%; height: auto; }
 video { max-width: 100%; margin: 1rem 0; }
 ul {
