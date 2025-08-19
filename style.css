@@ -99,25 +99,37 @@ p, li {
 .layout > main {
   grid-column: 2;
   padding: 2rem;
-  margin: 0;            /* override previous main { margin:auto } */
-  max-width: none;      /* let grid control width */
+  margin: 0;          
+  max-width: none;      
 }
 
 .section-rail .section-nav {
   display: flex;
   flex-direction: column;
   gap: .5rem;
+  border: 0;               
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+
 }
 
 .section-rail .section-nav a {
   color: #ffffff;
   text-decoration: none;
-  padding: .25rem 0;
+  padding: .25rem .5rem;
   font-weight: 600;
   border-right: 2px solid transparent;
 }
 
-.section-rail { border-right: 1px solid #333333; }
+.section-rail {  position: sticky;
+  top: calc(var(--header-h) + 8px);
+  align-self: start;
+  color: #fff; 
+  border-right: 1px solid #333333; 
+  padding: 1rem 1rem 1rem 0;
+  grid-column: 1;            
+              }
 
 /* behaviours */
 html { scroll-behavior: smooth; }
