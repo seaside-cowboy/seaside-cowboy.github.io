@@ -15,8 +15,25 @@ header {
   z-index: 10;
 }
 
-nav a { margin: 0 0.5rem; color: #ffffff; text-decoration: none; }
-nav a:hover { text-decoration: underline; background: #333333;}
+section { 
+  padding-block: 1rem;
+        }  
+
+section + section {                                   
+  margin-top: 2.5rem;                                 
+  border-top: 1px solid #333;                      
+  padding-top: 2rem;
+}
+
+nav a { 
+  margin: 0 0.5rem; 
+  color: #ffffff; 
+  text-decoration: none; 
+}
+nav a:hover { 
+  text-decoration: underline; 
+  background: #333333;
+}
 
 main { 
   padding: 2rem; 
