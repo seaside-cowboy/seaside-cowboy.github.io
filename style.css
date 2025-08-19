@@ -201,11 +201,11 @@ section { scroll-margin-top: 80px; }
 
 .art-gallery > img {
   width: 100%;
-  aspect-ratio: 4 / 3;     
+  aspect-ratio: 1 / 1;     
   object-fit: cover;       
   display: block;
 }
 
-.art-gallery > img.portrait { aspect-ratio: 3 / 4; }  
+.art-gallery > img.portrait { aspect-ratio: 3 / 5; }  
 .art-gallery > img.landscape{ aspect-ratio: 16 / 9; } 
 .art-gallery > img.square   { aspect-ratio: 1 / 1; }
