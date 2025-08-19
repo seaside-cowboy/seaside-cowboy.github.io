@@ -11,9 +11,9 @@ header {
 nav a { margin: 0 0.5rem; color: #ffffff; text-decoration: none; }
 nav a:hover { text-decoration: underline; background: #333333;}
 main { padding: 2rem; max-width: 900px; margin: auto; }
-h1, h2 { color: #717171; }
+h1, h2 { color: #9b9b9b; }
 h3, h4, h5 {
-  color: #7e7e7e; /* sub-headings */
+  color: #9b9b9b; /* sub-headings */
 }
 img { max-width: 100%; height: auto; }
 video { max-width: 100%; margin: 1rem 0; }
@@ -22,6 +22,11 @@ ul {
   padding-left: 1.5rem; /* indent bullets */
   list-style: disc;     
 }
+
+p, li {
+  color: #bdbdbd; /* paragraph & list text */
+}
+
 /*override */
 .socials {
   list-style: none;       /* remove bullet points */
