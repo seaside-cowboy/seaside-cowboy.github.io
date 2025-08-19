@@ -188,3 +188,23 @@ p, li {
 /* behaviours */
 html { scroll-behavior: smooth; }
 section { scroll-margin-top: 80px; }
+
+/* collage */
+.art-gallery {
+  /* Browser auto-chooses number of columns from this target width */
+  column-width: 320px;      
+  column-gap: 16px;
+  max-width: 1400px;        /* collage centered*/
+  width: calc(100% - 32px); 
+  margin: 0 auto;           /* center on the page */
+}
+
+.art-gallery > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 0 16px;         
+  break-inside: avoid;      /* keep each image intact */
+  border-radius: 6px;      
+  border: 1px solid #333;   
+}
