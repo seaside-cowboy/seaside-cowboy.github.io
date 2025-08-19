@@ -57,7 +57,9 @@ main h1 + h2,
 main h2 + h3,
 main h3 + h4,
 main h4 + h5,
-main h5 + h6 {
+main h5 + h6,
+main p + h1,
+main p + h2 {
   margin-top: 0.6rem;
 }
 
