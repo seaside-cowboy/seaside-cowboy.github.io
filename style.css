@@ -196,3 +196,71 @@ section { scroll-margin-top: 80px; }
 
 .art-gallery > img { width: 100%; height: auto; display: block; 
                     margin: 0 0 16px; break-inside: avoid; /* keep each image intact */ }
+
+/* mobile */
+
+/* Large tablets & down */
+@media (max-width: 1100px) {
+  /* Collapse the side rail; let content go full-width */
+  .section-rail { display: none; }
+  .layout {
+    grid-template-columns: 1fr;   /* no side columns */
+    gap: 0;
+  }
+  .layout > main {
+    grid-column: 1;
+    padding: 1.25rem;
+  }
+
+  /*top nav wrap*/
+  .page-nav {
+    flex-wrap: wrap;
+    gap: .5rem .75rem;
+    padding: 0 .5rem;
+  }
+  .page-nav a {
+    padding: .35rem .6rem;
+    border-radius: 999px;
+  }
+
+
+  ul { padding-left: 1.25rem; }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  header { padding: .75rem; }
+  .site-title { font-size: 1.5rem; }
+
+  
+  h1 { font-size: 1.4rem; line-height: 1.15; }
+  h2 { font-size: 1.15rem; }
+  h3, h4, h5 { font-size: 1rem; }
+
+  
+  section { padding-block: .75rem; }
+  section + section { margin-top: 1.25rem; padding-top: 1.25rem; }
+
+  
+  .socials { gap: .5rem .75rem; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  main { padding: 1rem; }
+  .page-nav { gap: .4rem .5rem; }
+  .page-nav a { font-weight: 600; }
+
+  /*links don’t overflow */
+  a { word-break: break-word; }
+}
+
+/* Art page: make the column collage adapt nicely */
+@media (max-width: 900px)  { .art-gallery { column-width: 240px; } }
+@media (max-width: 600px)  { .art-gallery { column-width: 180px; } }
+@media (max-width: 420px)  { .art-gallery { column-width: 140px; } }
+
+
+.page-nav a, .socials li a {
+  -webkit-tap-highlight-color: rgba(255,255,255,.15);
+}
