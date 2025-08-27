@@ -75,6 +75,15 @@ p, li {
   color: #e7e7e7; /* paragraph & list text */
 }
 
+a {
+  text-decoration: none;
+  color:  #ffffff;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 /*override */
 .socials {
   list-style: none;       /* remove bullet points */
