@@ -230,11 +230,9 @@ section { scroll-margin-top: 80px; }
   aspect-ratio: 16 / 9;         
   display: block;
   border: 0;
+  height: auto
 }
 
-.art-gallery .card > iframe.videoplayer {
-  min-height: 540px; 
-}
 
 .art-gallery .card > img,
 .art-gallery .card > blockquote { 
