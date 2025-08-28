@@ -302,9 +302,18 @@ section { scroll-margin-top: 80px; }
 }
 
 /* Art page mobile */
-@media (max-width: 900px)  { .art-gallery { column-width: 240px; } }
-@media (max-width: 600px)  { .art-gallery { column-width: 180px; } }
-@media (max-width: 420px)  { .art-gallery { column-width: 140px; } }
+@media (max-width: 900px)  { 
+  .art-gallery { 
+    column-width: 240px; 
+  } 
+}
+
+@media (max-width: 600px){
+  .art-gallery { 
+    column-count: 1; 
+    column-width: auto; 
+  }
+}
 
 
 .page-nav a, .socials li a {
