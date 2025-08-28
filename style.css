@@ -75,7 +75,7 @@ p, li {
   color: #e7e7e7; /* paragraph & list text */
 }
 
-a {
+a, span {
   text-decoration: none;
   color:  #ffffff;
   font-weight: bold;
