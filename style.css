@@ -202,7 +202,7 @@ section { scroll-margin-top: 80px; }
 /* collage */
 
 .art-gallery { 
-  column-width: 400px;
+  column-width: 320px;
   column-gap: 8px; 
   max-width: 1400px; /* collage centered*/ 
   width: calc(100% - 32px); 
@@ -232,7 +232,7 @@ section { scroll-margin-top: 80px; }
 .art-gallery .card > blockquote { 
   width:100%; 
   display:block; 
-  column-width: 320px;
+  
 }
 
 .art-gallery .card .videoplayer {
@@ -241,6 +241,7 @@ section { scroll-margin-top: 80px; }
   display: block;
   aspect-ratio: 4 / 3;
   border: 0;
+  column-width: 400px;
 }
 
 
