@@ -241,6 +241,15 @@ a:hover {
   text-decoration: underline; 
 }
 
+
+.game-card .videoplayer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
+}
+
+
 /* behaviours */
 html { scroll-behavior: smooth; }
 section { scroll-margin-top: 80px; }
