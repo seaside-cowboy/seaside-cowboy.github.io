@@ -130,6 +130,12 @@ a:hover {
   background: #BFBFBF;
 }
 
+.tiktok-player {
+  width: 100%;
+  height: 740px;
+  border: none;
+}
+
 /* .section-nav {
   display: flex;
   flex-wrap: wrap;
